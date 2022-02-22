@@ -8,6 +8,6 @@ jobs:
       - name: Debug
         uses: mheap/reviewed-by-trailer-action@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           states: approved,changed_requested
